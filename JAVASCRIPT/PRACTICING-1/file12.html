@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        var  numbers=prompt("enter your number")
-         var multiplesof3="3,6,9,12,15...."
-         var multiplesof5="5,10,15,20...."
-         var multiplesof3and5="3,5,6,9,10,12,15,18..."
+      var number = prompt("enter your number");
+      //  var multiplesof3="3,6,9,12,15...."
+      //  var multiplesof5="5,10,15,20...."
+      //  var multiplesof3and5="3,5,6,9,10,12,15,18..."
 
-        if(numbers=multiplesof3){
-            document.write("FIZZ")
-        }else if(numbers= multiplesof5){
-            document.write("BUZZ")
+      for (i = 0; i <= number; i++) {
+        if (i % 3 == 0) {
+          document.write("fizz <br>");
+        } else if (i % 5 == 0) {
+          document.write("buzz <br>");
+        } else if (i % 3 == 0 && i % 5 == 0) {
+          document.write("fizzbuzz <br>");
+        } else {
+          document.write(i + "<br>");
         }
-        else if(numbers=multiplesof3and5){
-            document.write("FIZZ BUZZ")
-        }
-        else {
-            document.write("no multiple")
-        }
+      }
     </script>
-    
-</body>
+  </body>
 </html>

@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <script>
-        var colorpicker="red,blue,yellow,green,pink"
-        var  color=prompt('enter your color')
+      var colorpicker = ["red", "blue", "yellow", "green", "pink"];
+      var color = prompt("enter your color");
 
-        // var color=colorpicker
-        // alert("your color is matched")
+      // var color=colorpicker
+      // alert("your color is matched")
 
-        if(color==colorpicker){
-            alert("color is matched")
-        }
-        else{
-            alert("color is not matched")
-        }
-        
+      if (colorpicker.indexOf(color) > -1) {
+        alert("color is matched");
+      } else {
+        alert("color is not matched");
+      }
     </script>
-</body>
+  </body>
 </html>
