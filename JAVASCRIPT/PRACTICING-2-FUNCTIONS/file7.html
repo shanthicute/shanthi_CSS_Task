@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculation() {
+        var number1 = Number(prompt("enter first number"));
+        var number2 = Number(prompt("enter second number"));
+        var operator = prompt("enter the mathematical operation");
+
+        // var result;
+
+        switch (operator) {
+          case "+":
+            result = number1 + number2;
+
+            document.write(result);
+            break;
+
+          case "-":
+            result = number2 - number1;
+            document.write(result);
+            break;
+          case "*":
+            result = number1 * number2;
+
+            document.write(result);
+            break;
+          case "/":
+            result = number1 / number2;
+
+            document.write(result);
+            break;
+
+          default:
+            result = number1 % number2;
+            document.write(result);
+            break;
+        }
+      }
+      calculation();
+
+
+      function calculator(){
+        var num1=Number(prompt("enter ur number"))
+        var num2=Number(prompt("enter ur number"))
+        var result=prompt("enter ur operator")
+
+        if(result == "add"){
+            document.write(num1+num2)
+        }else if(result=="sub"){
+            document.write(num2-num1)
+        }else if(result =="mul"){
+            document.write(num1*num2)
+        }else{
+            document.write(num1/num2)
+        }
+      }
+      calculator()
+
+    </script>
+  </body>
+</html>
