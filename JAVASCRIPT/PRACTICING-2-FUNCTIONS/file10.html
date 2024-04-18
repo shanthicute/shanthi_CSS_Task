@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function usermarks() {
+        var marks = Number(prompt("enter your marks"));
+        switch (marks) {
+          case "marks>90":
+            document.write("A grade");
+            break;
+          case "marks>75":
+            document.write("B grade");
+            break;
+          case "marks>55":
+            document.write("C grade");
+            break;
+
+          default:
+            document.write("D grade");
+            break;
+        }
+      }
+      usermarks();
+    </script>
+  </body>
+</html>

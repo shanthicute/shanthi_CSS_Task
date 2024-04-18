@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function guessingnumber() {
+        var guess = prompt("enter number between 1 to 100");
+
+        switch (guess) {
+          case (guess>80):
+            document.write("it is too high");
+            break;
+
+          case(guess<30) :
+            document.write("it is too low ");
+            break;
+
+          case (guess>60):
+            document.write("some what better");
+            break;
+
+          default:
+            document.write("it is correct");
+            break;
+        }
+      }
+      guessingnumber()
+    </script>
+  </body>
+</html>
