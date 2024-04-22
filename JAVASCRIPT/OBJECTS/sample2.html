@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //literal way of creating a function
+      // var student = {
+      //   name: "shanthi",
+      //   age: 31,
+      //   profession: "Frontenddeveloper",
+      //   mobile: 9652099865,
+      // };
+
+      // construction way of creating objects
+
+      function student(fname, lname) {
+        this.fname = fname;
+        this.lname = lname;
+      }
+      var std1 = new student("shanthi", "Reddy");
+      console.log(std1);
+
+      function person(name, email) {
+        this.name = name;
+        this.email = email;
+      }
+      var person1 = new person("shanthi", "sahnthicute.b1@gmail.com");
+      console.log(person1);
+
+      function game(firstgame, secondgame) {
+        this.firstgame = firstgame;
+        this.secondgame = secondgame;
+      }
+      var object = new game("kabadi", "koko");
+      console.log(object);
+
+      //object notations
+      var movie = {
+        name: "chatrapati",
+        hero: "prabas",
+        height: 6,
+      };
+      console.log(movie);
+
+      document.write(movie.name + "<br>");
+      document.write("MOVIE:" + movie.name + "<br>");
+      document.write("MOVIE_" + movie["hero"] + "<br>");
+
+      //adding and modifying objects
+
+      var mobile = {
+        Name: "poco",
+        gb: 8,
+        model: 22127,
+      };
+      console.log(mobile);
+      // mobile.ram="8gb"
+      mobile["ram"] = "8gb";
+
+      //deleting the object
+
+      delete mobile.gb;
+
+      //METHODS
+
+      var table = {
+        firstmodel: "wooden table",
+        secondmodel: "glass table",
+        tablemodel: function () {
+          name: "tipa";
+          inches: 15;
+        },
+      };
+      console.log(table);
+      table.tablemodel();
+
+      var theater = {
+        MSR: "MSR theater",
+        naidubuildings: "Ragava",
+        adress: function () {
+          console.log("those are  in chittoor");
+        },
+      };
+      // console.log(theater)
+
+      theater.adress();
+      console.log(theater);
+
+      //by using "this"
+
+      function adress(village, post, pincode) {
+        this.village = village;
+        this.post = post;
+        this.pincode = pincode;
+      }
+      // console.log(this.pincode)
+
+      var newadress = new adress("kammarayanimitta", "kukkalapalli", "517422");
+      console.log(newadress);
+      // console.log(this.pincode)
+
+      // nesting objects
+      var person = {
+        fname: "Rama",
+        lname: "chandra",
+        adress: {
+          street: "sai nagar colony",
+          doorno: "123",
+          Town: "santapet",
+          district: "chittoor",
+          displayadress: function () {
+            // street:"1st street",
+            // doorNo:
+
+            console.log("This is from nesting objects")
+            
+          },
+        },
+      };
+      console.log(person)
+
+      // object properties as references
+
+      var adressdetails = {
+        street: "sai nagar colony",
+        doorno: "123-36",
+        Town: "santapet",
+        district: "chittoor",
+        displayadress: function () {
+          (portion = "1"), (colony = "sai nagar colony");
+        },
+      };
+
+      var person = {
+        fname: "Ram",
+        lname: "krishna",
+        adress: adressdetails,
+      };
+      console.log(person);
+
+
+      //object iteration
+
+      var student={
+        name:"shanthi",
+        FatherName:"Rama chandra reddy",
+        MotherName:"Girija",
+        contact:6309729865
+      }
+
+      document.write("name:"+student.name +"<br>")
+      document.write("FatherName:"+student.FatherName +"<br>")
+      document.write("MotherName:"+student.MotherName +"<br>")
+      document.write("contact:"+student.contact +"<br>")
+
+      for(a in student){
+        // document.write(a +"<br>")
+        document.write(student[a] +"<br>")
+        // document.write(a +":" +student[a]+"<br>")
+      }
+
+    
+    </script>
+  </body>
+</html>
+  

@@ -11,10 +11,10 @@
       margin: 0;
     }
     #main {
-    width: 100%;
-    background-color: #333;
-    color: white;
-}
+      width: 100%;
+      background-color: #333;
+      color: white;
+    }
     #header {
       width: 960px;
       margin: auto;
@@ -28,16 +28,20 @@
       width: 500px;
     }
     div#nav {
-    width: 596px;
-    margin-top: 20px;
-    background: black;
-    padding: 10px;
-}
-    
-#nav ul li {
-    display: inline;
-    margin-right: 37px;
-}
+      width: 600px;
+      margin-top: 20px;
+      background: black;
+      padding: 10px;
+    }
+    #nav ul {
+      width: 600px;
+      /* padding: 10px; */
+      margin-top: 14px;
+    }
+    #nav ul li {
+      display: inline;
+      margin-right: 37px;
+    }
     div#form {
       /* margin-top: 35px; */
       /* margin-left: 43px; */
@@ -54,39 +58,134 @@
       width: 70px;
     }
     div#second {
-    width: 960px;
-    margin: auto;
-    margin-top: 20px;
-    overflow: auto;
-}
-div#para {
-    width: 400px;
-    background: cadetblue;
-    /* font-size: 30px; */
-    float: left;
-    /* height: 333px; */
-}
-#para h1 {
-    font-size: 50px;
-}
+      width: 960px;
+      margin: auto;
+      margin-top: 20px;
+      overflow: auto;
+    }
+    div#para {
+      width: 400px;
+      background: cadetblue;
+      /* font-size: 30px; */
+      float: left;
+      /* height: 333px; */
+    }
+    #para h1 {
+      font-size: 50px;
+    }
 
     #para p {
-    margin-top: 20px;
-    font-size: 24px;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+    div#image {
+      width: 560px;
+      float: right;
+    }
+    #image img {
+      width: 560px;
+      height: 372px;
+    }
+    p#read {
+      float: right;
+      font-size: 20px;
+      color: brown;
+    }
+    div#last\ section {
+      width: 960px;
+      margin: auto;
+      margin-top: 15px;
+      overflow: auto;
+    }
+    div#firstchild {
+      width: 250px;
+      float: left;
+    }
+    h4 {
+      width: 220px;
+    }
+    h5 {
+      margin-top: 10px;
+      width: 220px;
+    }
+    p#see {
+      font-size: 12px;
+      width: 220px;
+    }
+    span {
+      color: orange;
+    }
+    p#go {
+      font-size: 15px;
+      margin-top: 10px;
+      width: 220px;
+    }
+    p#went {
+      margin-top: 20px;
+      width: 220px;
+    }
+    p a {
+      color: orange;
+      float: right;
+      margin-right: 88px;
+      margin-top: 13px;
+    }
+    #Read{
+      float: right;
+    }
+    div#secondchild {
+      width: 250px;
+      float: left;
+    }
+    #secondchild ul {
+      margin-top: 12px;
+      list-style-type: circle;
+      width: 200px;
+    }
+    #secondchild ul li {
+      line-height: 30px;
+      border-bottom: 1px solid orange;
+      width: 165px;
+    }
+    div#thirdchild {
+    float: right;
+    width: 450px;
 }
-div#image {
-    width: 560px;
+h4 {
+    width: 200px;
+}
+div#imgpara {
+    width: 450px;
+    overflow: auto;
+}
+div#img {
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+}
+#img img {
+    width: 180px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+div#paragraph {
+    width: 250px;
+    margin-top: 10px;
     float: right;
 }
-#image img {
-    width: 560px;
-    height: 372px;
+#paragraph p {
+    
+    margin-top: 7px;
 }
-p#read {
+p#more {
+    
     float: right;
-    font-size: 20px;
-    color: brown;
 }
+p a {
+    color: orange;
+}
+    
   </style>
   <body>
     <div id="main">
@@ -115,17 +214,61 @@ p#read {
     </div>
 
     <div id="second">
-        <div id="para">
-            <h1>Eu justo augue estas
-                Nullamlacus dui ipsum</h1>
-            <p>conseque loborttis non euisque morbi penas dapibulum orna. 
-                Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo
-                 nulla et feugiat adipiscinia pellentum leo.</p>
-                 <p id="read">READMORE>></p>
+      <div id="para">
+        <h1>Eu justo augue estas Nullamlacus dui ipsum</h1>
+        <p>
+          conseque loborttis non euisque morbi penas dapibulum orna.
+          Urnaultrices quis curabitur phasellentesque congue magnis vestibulum
+          quismodo nulla et feugiat adipiscinia pellentum leo.
+        </p>
+        <p id="read">READMORE>></p>
+      </div>
+      <div id="image">
+        <img src="./image4.jfif" alt="" />
+      </div>
+    </div>
+
+    <div id="last section">
+      <div id="firstchild">
+        <h4>FROM THE BLOG</h4>
+        <h5>Post Title</h5>
+        <p id="see"><span>Admin,</span> domainname.com</p>
+        <p id="go">Friday, 6th April 2000</p>
+        <p id="went">
+          Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a
+          tellus consequat imperdiet.
+        </p>
+
+        <p id="Read"><a href="">Read More »</a></p>
+      </div>
+      <div id="secondchild">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Amet consectetur</li>
+          <li>Praesent vel sem id</li>
+          <li>Curabitur hendrerit est</li>
+          <li>Sed a nulla urna</li>
+        </ul>
+      </div>
+      <div id="thirdchild">
+        <h4>ABOUT US</h4>
+        <div id="imgpara">
+          <div id="img">
+            <img src="./image4.jfif" alt="" />
+          </div>
+          <div id="paragraph">
+            <p>
+              Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque
+              adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi.
+              Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
+              consequat imperdiet. Vestibulum sapien. Proin quam. Etiam
+              ultrices. Suspendisse in justo eu magna luctus suscipit.
+            </p>
+            <p id="more"><a href="">Read More »</a></p>
+          </div>
         </div>
-        <div id="image">
-<img src="./image4.jfif" alt="">
-        </div>
+      </div>
     </div>
   </body>
 </html>
