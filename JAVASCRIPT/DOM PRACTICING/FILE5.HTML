@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Image</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody></tbody>s
+    </table>
+    <script>
+      var products = [
+        { id: 1, title: "fancydress", price: 250, Description: "afdhfnhaN" ,rating:"326565"},
+      ];
+
+      products.forEach((prod) => {
+        var mytr = document.createElement("tr");
+        for (a in products) {
+          if (a !== rating && a !== image) {
+            var mytd = document.createElement("td");
+            mytd.innerHTML = products[a];
+            mytr.appendChild(mytd);
+          } else if (a === "image") {
+            var mytd = document.createElement("td");
+            var myimage = document.createElement("img");
+            myimage.src = prod[a];
+            mytd.appendChild(myimage);
+            mytr.appendChild(mytd);
+          }
+          document.querySelector("tbody").appendChild(mytr);
+        }
+      });
+    </script>
+  </body>
+</html>
