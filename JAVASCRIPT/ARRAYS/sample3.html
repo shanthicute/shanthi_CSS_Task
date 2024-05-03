@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var friends=["sam","ravi","meena","santosh","pavan"]
+        // for(i=0;i<=4;i++){
+        //     document.write( i+ "<br>")
+        //     document.write(friends[i] +"<br>")
+        // }
+
+        // for(i=0;i<friends.length;i++){
+        //     document.write(friends[i]+"<br>")
+        // }
+
+
+        
+        // // friends.forEach(function (val){
+        // //     document.write(val +"<br>")
+        // // })
+
+        //  var newfriends=friends.map(function(val){
+        //     return val +"-VMR"
+        // })
+
+        var findnames=friends.find(function(val){
+            return val.length===4;
+            document.write(findnames)
+            console.log(findnames)
+        })
+
+        var filterednames=friends.filter(function(val){
+            return val.length===4
+            document.write(filterednames)
+        })
+
+        var check=friends.some(function(val){
+            return val.length>=3
+        })
+        console.log("check-,"+check)
+
+        var check=friends.every(function(val){
+            return val.length>=3
+        })
+
+        var marks=[89,90,27,56,45]
+        var total=marks.reduce(function(a,b){
+            return a+b;
+        })
+        document.write("Total marks="+total)
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="some()">some</button>
+    <script>
+      function some() {
+        var friends = ["shafi", "sherkhan", "rajubai", "sekar"];
+        var check = Friends.some(function (val) {
+          return val.length >= 3;
+        });
+        console.log("check -", check);
+      }
+      some();
+    </script>
+
+    <button onclick="every()">every</button>
+    <script>
+      var friends = ["shafi", "sherkhan", "rajubai", "sekar"];
+      function every() {
+        var check = Friends.every(function (val) {
+          return val.length >= 3;
+        });
+      }
+      every();
+    </script>
+  </body>
+</html>

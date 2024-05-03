@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addavalue()">Add a value</button>
+
+    <script>
+        function addavalue(){
+            var students=["Ram","Rahim","Sam","siva"];
+            students.push("divya")
+
+            for(i=0;i<students.length;i++){
+                document.write(students[i]+"<br>")
+            }
+        //     document.write(students)
+         }
+        addavalue()
+        
+    </script>
+</body>
+</html>

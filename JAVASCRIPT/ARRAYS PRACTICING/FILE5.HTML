@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="deletefirst()">deletefirst</button>
+    <script>
+        function deletefirst() {
+            var students=["Raj","ravi","kishore","rahim"]
+        students.shift()
+        for(i=0;i<students.length;i++){
+            document.write(students[i]+"<br>")
+        }
+
+        // students.forEach(function(val){
+        //     document.write(val +"<br>")
+        // })
+
+        //  var newstudents=students.map(function(val){
+        //     document.write(val +"-VMR" +"<br>")
+        //     // return val+"-VMR"
+        //     // document.write(newstudents)
+        // })
+
+        // var findnames=students.find(function(val){
+        //     return val.length===3;
+        //     document.write(findnames)
+        // })
+
+        }
+        deletefirst()
+
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="filtered()">filtered</button>
+    <script>
+        function filtered(){
+            var friends=["somu","sathish","ravi","chandra","hari"]
+            var filterdnames=friends.filter(function(val){
+                return val.length==4;
+                document.write(filterdnames)
+            })
+
+        }
+        filtered()
+
+        
+    </script>
+</body>
+</html>

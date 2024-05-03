@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  onclick=deletemiddle()>deletemiddle</button>
+    <script>
+        function deletemiddle(){
+            var students=["raj","kshore","chandra","kiran","ravi"]
+            students.splice(2,1)
+            // document.write(students)
+            for(i=0;i<students.length;i++){
+                document.write(students[i] +"<br>")
+            }
+
+            // students.forEach(function(val){
+            //     document.write(val+"<br>")
+            // })
+            var newstudents= students.map(function(val){
+                document.write(val+"-VMR" +"<br>")
+            })
+        }
+        deletemiddle()
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var person = {
+        name: "shanthi",
+        age: 31,
+        profession: "UI developer",
+        salary: 80000,
+      };
+      console.log(person);
+
+      //   function person(fname, lname) {
+      //     (this.fname = fname), (this.lname = lname);
+      //   }
+      //   var newperson = new person("shanthi", "reddy");
+      //   console.log(newperson);
+
+      document.write(person.name + "<br>");
+      document.write(person["age"] + "<br>");
+
+      // person.contact="9652099865"
+      person["contact"] = 9652099865;
+      console.log(person);
+
+      delete person.contact;
+      console.log(person);
+
+      //   var person = {
+      //     name: "Thiyash",
+      //     age: 20,
+      //     proession: "frontend developer",
+      //     salary: 50000,
+      //     contact: 6309729865,
+
+      //     languagesknown: function () {
+      //       console.log("html")
+      //       console.log("css")
+      //     },
+      //   };
+      //   person.languagesknown()
+      // //   console.log(person)
+
+    //    Person(fname, lname, email) {
+    //     this.fname = fname;
+    //     this.lname = lname;
+    //     this.email = email;
+    //     this.fullname = function () {
+    //       console.log(this);
+    //       console.log(this.email);
+    //     };
+    //   }
+    //   var person1 = new Person("shanthi", "reddy", "shanthicute.b1@gmail.com");
+    //   person1.fullname();
+    //   console.log(this);
+    //   console.log(this.email);
+
+      var student = {
+        fname: "Jaya",
+        lname: "Rama",
+        adress: {
+          street: "1st street",
+          doorno: "123",
+          area: "mittoor",
+          displayAdress: function () {
+            console.log("this is from person object");
+          },
+        },
+      };
+      console.log(student)
+      
+      var referenceadress={
+        street:"sainagarcolony",
+        doorno:"51-39/1",
+        contact:5689236246
+      }
+
+      var student={
+        fname:"Ram",
+        lname:"siva",
+        adress:referenceadress
+      }
+      console.log(student)
+
+
+      var student={
+        Name:"Ram",
+        class:6,
+        schoolname:"Devi Bala Mandir",
+
+      }
+            document.write("NAME:"+student.Name+"<br>")
+            document.write("CLASS:"+student.class+"<br>")
+            document.write("SCHOOLNAME:"+student.schoolname+"<br>")
+
+            for( a in student){
+                document.write(a +':'+student[a]+"<br>")
+                // document.write(a +"<br>")
+                // document.write(student[a]+"<br>")
+                
+            }
+    </script>
+  </body>
+</html>
